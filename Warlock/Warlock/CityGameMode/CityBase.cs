@@ -11,18 +11,18 @@ namespace Warlock
     public class CityBase : IDrawable, IInteractable
     {
         public string CityBG { get; set; }
-        private Rectangle rect;
+        private Rectangle rect1;
         public CityBase()
         {
             rect = new Rectangle(0, 0, WarlockGame.Graphics.PreferredBackBufferWidth, WarlockGame.Graphics.PreferredBackBufferHeight);
-        }
+        } 
 
         public void Draw()
         {
             // Main Draw for every city
             
             WarlockGame.Batch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
-            WarlockGame.Batch.Draw(WarlockGame.TextureDictionary[CityBG], rect, Color.White);
+            WarlockGame.Batch.Draw(WarlockGame.TextureDictionary[CityBG], rect1, Color.White);
             WarlockGame.Batch.End();
         }
 
