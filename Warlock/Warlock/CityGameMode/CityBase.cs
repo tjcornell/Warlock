@@ -14,7 +14,7 @@ namespace Warlock
         private Rectangle rect1;
         public CityBase()
         {
-            rect = new Rectangle(0, 0, WarlockGame.Graphics.PreferredBackBufferWidth, WarlockGame.Graphics.PreferredBackBufferHeight);
+            rect1 = new Rectangle(0, 0, WarlockGame.Graphics.PreferredBackBufferWidth, WarlockGame.Graphics.PreferredBackBufferHeight);
         } 
 
         public void Draw()
